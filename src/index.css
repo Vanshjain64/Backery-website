@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 97%;
+    --foreground: 24 10% 20%;
+
+    --card: 30 25% 95%;
+    --card-foreground: 24 10% 20%;
+
+    --popover: 30 33% 97%;
+    --popover-foreground: 24 10% 20%;
+
+    --primary: 350 40% 65%;
+    --primary-foreground: 30 33% 97%;
+
+    --secondary: 30 30% 90%;
+    --secondary-foreground: 24 10% 20%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 24 8% 45%;
+
+    --accent: 24 30% 78%;
+    --accent-foreground: 24 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 350 40% 65%;
+
+    --radius: 0.75rem;
+
+    --bakery-cream: 40 40% 95%;
+    --bakery-pink: 350 40% 65%;
+    --bakery-pink-light: 350 50% 92%;
+    --bakery-beige: 30 30% 85%;
+    --bakery-brown: 24 25% 35%;
+    --bakery-brown-light: 24 20% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .bakery-shadow {
+    box-shadow: 0 4px 20px -4px hsl(24 25% 35% / 0.1);
+  }
+  .bakery-shadow-hover {
+    box-shadow: 0 8px 30px -4px hsl(24 25% 35% / 0.18);
+  }
+}
